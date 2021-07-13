@@ -1,0 +1,34 @@
+<view class="container">
+    <modal mask="{{false}}" visible="{{modal.center}}" gravity="center" bindtapMask="handleClose" data-gravity="center"
+           ui-class="center-ui-class">
+        <view class="content center">
+            <text bind:tap="handleClose" data-gravity="center">Hello, no mask</text>
+        </view>
+    </modal>
+    <modal visible="{{modal.left}}"
+           z-index="{{200}}"
+           gravity="left" bindtapMask="handleClose" data-gravity="left">
+        <view class="content left">
+            <text>Hello</text>
+        </view>
+    </modal>
+    <modal visible="{{modal.top}}" gravity="top" bindtapMask="handleClose" data-gravity="top">
+        <view class="content top">
+            <text>Hello</text>
+        </view>
+    </modal>
+    <modal visible="{{modal.right}}" gravity="right" bindtapMask="handleClose" data-gravity="right">
+        <view class="content right">
+            <text>Hello</text>
+        </view>
+    </modal>
+    <modal ui-class="bottom-drawer" visible="{{modal.bottom}}" gravity="bottom" bindtapMask="handleClose"
+           data-gravity="bottom">
+        <view class="content bottom">
+            <text>Hello</text>
+        </view>
+    </modal>
+    <view wx:for="{{gravity_list}}" wx:key="index">
+        <button type="primary" class="a-view" bind:tap="handleToggle" data-gravity="{{item}}">open {{item}}</button>
+    </view>
+</view>

@@ -1,0 +1,4 @@
+<view wx:if="{{mask}}" class="modal-mask {{visible ? 'show' : ''}}" style="z-index: {{zIndex}};" bind:tap="onTapMask"></view>
+<view class="modal-content {{gravity}} {{visible ? 'show' : ''}} ui-class" style="z-index: {{zIndex}};">
+    <slot></slot>
+</view>

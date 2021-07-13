@@ -1,0 +1,39 @@
+.dialog-custom {
+    background: white;
+    padding: 24rpx;
+}
+
+.dialog-2 {
+    border: 5rpx solid red;
+}
+
+.content {
+    position: relative;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center {
+    width: 50vw;
+    height: 50vh;
+}
+
+.left, .right {
+    width: 80vw;
+    height: 100vh;
+}
+
+.top, .bottom {
+    width: 100vw;
+    height: 50vh;
+}
+
+.bottom-drawer {
+    border-top: 5px solid red;
+}
+
+.a-view {
+    margin-top: 20rpx;
+}
