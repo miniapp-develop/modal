@@ -2,7 +2,7 @@
     <modal mask="{{false}}" visible="{{modal.center}}" gravity="center" bindtapMask="handleClose" data-gravity="center"
            ui-class="center-ui-class">
         <view class="content center">
-            <text bind:tap="handleClose" data-gravity="center">Hello, no mask</text>
+            <button bind:tap="handleClose" data-gravity="center">Hello, no mask</button>
         </view>
     </modal>
     <modal visible="{{modal.left}}"
