@@ -21,7 +21,6 @@ _Component({
     },
     methods: {
         onTapMask(e) {
-            console.log(this.data);
             this.triggerEvent('tapMask', {});
         }
     }
