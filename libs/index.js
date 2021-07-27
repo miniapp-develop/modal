@@ -1,26 +1,27 @@
-function defaultArray(val) {
-    return val || [];
-}
+const {_Component} = require('./Component');
 
-function create(extra, factory = Component) {
-    return function (options = {}) {
-        options.externalClasses = defaultArray(extra.externalClasses).concat(defaultArray(options.externalClasses));
-        options.behaviors = defaultArray(extra.behaviors).concat(defaultArray(options.behaviors));
-        options.options = {
-            ...extra.options,
-            ...options.options
+_Component({
+    properties: {
+        visible: {
+            type: Boolean,
+            value: false
+        },
+        mask: {
+            type: Boolean,
+            value: true
+        },
+        gravity: {
+            type: String,
+            value: 'center'
+        },
+        zIndex: {
+            type: Number,
+            value: 10
         }
-        factory(options);
-    }
-}
-
-const _Component = create({
-    externalClasses: ['ui-class'],
-    options: {
-        styleIsolation: 'isolated',
-        multipleSlots: true,
-        pureDataPattern: /^\$_/
+    },
+    methods: {
+        onTapMask(e) {
+            this.triggerEvent('tapMask', {});
+        }
     }
 });
-
-exports._Component = _Component;
