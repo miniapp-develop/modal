@@ -1,6 +1,6 @@
 {
   "name": "@mini-dev/modal",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "miniapp modal component",
   "miniprogram": "libs",
   "scripts": {
