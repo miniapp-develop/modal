@@ -11,13 +11,22 @@
     position: relative;
     background: white;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
+.modal__input {
+    border: 1px solid #e4e4e4;
+    margin: 1em 0;
+}
+
 .center {
-    width: 50vw;
-    height: 50vh;
+    min-width: 80vw;
+    min-height: 30vh;
+    background: #e4e4e4;
+    border-radius: 1em;
+    box-shadow: #00000066 5rpx 5rpx 40rpx;
 }
 
 .left, .right {

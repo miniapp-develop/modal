@@ -1,31 +1,46 @@
 <view class="container">
-    <modal mask="{{false}}" visible="{{modal.center}}" gravity="center" bindtapMask="handleClose" data-gravity="center"
+    <modal mask="{{false}}"
+           visible="{{modal.center}}"
+           gravity="center"
+           z-index="{{200}}"
+           anim-duration=".3s"
+           bindtapMask="handleClose"
+           data-gravity="center"
            ui-class="center-ui-class">
         <view class="content center">
-            <button bind:tap="handleClose" data-gravity="center">Hello, no mask</button>
+            <view>没有蒙层</view>
+            <input class="modal__input"
+                   placeholder="输入搜索值"/>
+            <button bind:tap="handleClose" data-gravity="center">关闭</button>
         </view>
     </modal>
     <modal visible="{{modal.left}}"
            z-index="{{200}}"
-           gravity="left" bindtapMask="handleClose" data-gravity="left">
+           gravity="left"
+           anim-duration="1s"
+           bindtapMask="handleClose" data-gravity="left">
         <view class="content left">
             <text>Hello</text>
+            <button bind:tap="handleClose" data-gravity="left">关闭</button>
         </view>
     </modal>
     <modal visible="{{modal.top}}" gravity="top" bindtapMask="handleClose" data-gravity="top">
         <view class="content top">
             <text>Hello</text>
+            <button bind:tap="handleClose" data-gravity="top">关闭</button>
         </view>
     </modal>
     <modal visible="{{modal.right}}" gravity="right" bindtapMask="handleClose" data-gravity="right">
         <view class="content right">
             <text>Hello</text>
+            <button bind:tap="handleClose" data-gravity="right">关闭</button>
         </view>
     </modal>
     <modal ui-class="bottom-drawer" visible="{{modal.bottom}}" gravity="bottom" bindtapMask="handleClose"
            data-gravity="bottom">
         <view class="content bottom">
             <text>Hello</text>
+            <button bind:tap="handleClose" data-gravity="bottom">关闭</button>
         </view>
     </modal>
     <view wx:for="{{gravity_list}}" wx:key="index">

@@ -1,6 +1,6 @@
 Page({
     data: {
-        gravity_list: ['left', 'top', 'right', 'bottom', 'center'],
+        gravity_list: ['center', 'left', 'top', 'right', 'bottom'],
         modal: {
             left: false,
             top: false,

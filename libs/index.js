@@ -17,6 +17,10 @@ _Component({
         zIndex: {
             type: Number,
             value: 10
+        },
+        animDuration: {
+            type: String,
+            value: "0.3s"
         }
     },
     methods: {
