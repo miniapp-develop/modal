@@ -1,7 +1,7 @@
-<view wx:if="{{mask}}" class="modal-mask {{visible ? 'show' : ''}}"
-      style="z-index: {{zIndex}};transition-duration:{{animDuration}}"
+<view wx:if="{{mask}}" class="mask {{visible ? 'show' : ''}}"
+      style="z-index:{{zIndex}};transition-duration:{{animDuration}}"
       bind:tap="onTapMask"></view>
-<view class="modal-content {{gravity}} {{visible ? 'show' : ''}} ui-class"
-      style="z-index: {{zIndex}};transition-duration:{{animDuration}}">
+<view class="modal {{gravity}} {{visible ? 'show' : ''}} ui-class"
+      style="z-index:{{zIndex}};transition-duration:{{animDuration}}">
     <slot></slot>
 </view>

@@ -1,4 +1,4 @@
-.modal-mask {
+.mask {
     position: fixed;
     top: 0;
     left: 0;
@@ -11,12 +11,12 @@
     transition-timing-function: ease-in-out;
 }
 
-.modal-mask.show {
+.mask.show {
     opacity: 1;
     visibility: visible;
 }
 
-.modal-content {
+.modal {
     position: fixed;
     visibility: hidden;
 }
