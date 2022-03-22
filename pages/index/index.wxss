@@ -17,8 +17,10 @@
 }
 
 .modal__input {
-    border: 1px solid #e4e4e4;
+    border: 1px solid #dddddd;
     margin: 1em 0;
+    padding: 0.5em 1em;
+    background: white;
 }
 
 .center {
