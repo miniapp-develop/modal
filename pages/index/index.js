@@ -23,5 +23,10 @@ Page({
     },
     handleClose(e) {
         this._toggle(e);
+    },
+    onTapDefault() {
+        wx.showModal({
+            content: "test"
+        })
     }
 });

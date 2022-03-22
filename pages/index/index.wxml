@@ -1,5 +1,5 @@
 <view class="container">
-    <modal mask="{{false}}"
+    <modal mask="{{true}}"
            visible="{{modal.center}}"
            gravity="center"
            z-index="{{200}}"
@@ -43,7 +43,10 @@
             <button bind:tap="handleClose" data-gravity="bottom">关闭</button>
         </view>
     </modal>
-    <view wx:for="{{gravity_list}}" wx:key="index">
-        <button type="primary" class="a-view" bind:tap="handleToggle" data-gravity="{{item}}">open {{item}}</button>
+    <view wx:for="{{gravity_list}}" wx:key="index" class="btn">
+        <button type="primary" bind:tap="handleToggle" data-gravity="{{item}}">open {{item}}</button>
+    </view>
+    <view>
+        <button bind:tap="onTapDefault">小程序默认弹框</button>
     </view>
 </view>

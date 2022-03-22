@@ -43,6 +43,6 @@
     border-top: 5px solid red;
 }
 
-.a-view {
-    margin-top: 20rpx;
+.btn {
+    padding: 20rpx;
 }
