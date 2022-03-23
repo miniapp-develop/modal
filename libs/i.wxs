@@ -1,0 +1,10 @@
+var anim = function (gravity, duration) {
+    if (gravity === 'center') {
+        return 'animation-duration:' + duration;
+    } else {
+        return 'transition-duration:' + duration;
+    }
+}
+module.exports = {
+    anim: anim
+};

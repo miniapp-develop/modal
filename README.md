@@ -32,7 +32,7 @@
         </view>
     </modal>
 ```
-说明：
+可选配置项：
 
     visible:bool[true|false]，控制模态框的显示与隐藏
     gravity:string[left|right|bottom|top|center]，控制模态框显示位置，默认center居中显示
@@ -42,3 +42,8 @@
     ui-class:string，覆盖组件内部的css
     
 demo 参见：[./pages/index/index.wxml](./pages/index/index.wxml)
+
+### 说明
+
+如果 slot 中含有原生组件，在部分 ios 系统里面，会存在初始化样式的显示问题，比如：input 无法hidden，
+所以这里采取了把 center 隐藏到视界外的方式。

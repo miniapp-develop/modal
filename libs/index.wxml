@@ -1,7 +1,8 @@
+<wxs src="./i.wxs" module="i"/>
 <view wx:if="{{mask}}" class="mask {{visible ? 'show' : ''}}"
       style="z-index:{{zIndex}};transition-duration:{{animDuration}}"
       bind:tap="onTapMask"></view>
 <view class="modal {{gravity}} {{visible ? 'show' : ''}} ui-class"
-      style="z-index:{{zIndex}};transition-duration:{{animDuration}}">
+      style="z-index:{{zIndex}};{{i.anim(gravity, animDuration)}}">
     <slot></slot>
 </view>
