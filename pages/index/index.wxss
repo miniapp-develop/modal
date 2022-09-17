@@ -1,3 +1,7 @@
+.center-mini-class {
+    top: 30% !important;
+}
+
 .dialog-custom {
     background: white;
     padding: 24rpx;

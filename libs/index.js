@@ -20,7 +20,7 @@ _Component({
         },
         animDuration: {
             type: String,
-            value: "0.3s"
+            value: "0.2s"
         }
     },
     methods: {

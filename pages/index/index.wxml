@@ -6,9 +6,9 @@
            anim-duration=".3s"
            bindtapMask="handleClose"
            data-gravity="center"
-           ui-class="center-ui-class">
+           mini-class="center-mini-class">
         <view class="content center">
-            <view>没有蒙层</view>
+            <view>没有蒙层，动画时间：0.3s</view>
             <input class="modal__input"
                    placeholder="输入搜索值"/>
             <button bind:tap="handleClose" data-gravity="center">关闭</button>
@@ -20,26 +20,35 @@
            anim-duration="1s"
            bindtapMask="handleClose" data-gravity="left">
         <view class="content left">
-            <text>Hello</text>
+            <text>动画时间：1s</text>
             <button bind:tap="handleClose" data-gravity="left">关闭</button>
         </view>
     </modal>
-    <modal visible="{{modal.top}}" gravity="top" bindtapMask="handleClose" data-gravity="top">
+    <modal visible="{{modal.top}}"
+           gravity="top"
+           bindtapMask="handleClose"
+           data-gravity="top">
         <view class="content top">
-            <text>Hello</text>
+            <text>动画时间：默认</text>
             <button bind:tap="handleClose" data-gravity="top">关闭</button>
         </view>
     </modal>
-    <modal visible="{{modal.right}}" gravity="right" bindtapMask="handleClose" data-gravity="right">
+    <modal visible="{{modal.right}}"
+           gravity="right"
+           bindtapMask="handleClose"
+           data-gravity="right">
         <view class="content right">
-            <text>Hello</text>
+            <text>动画时间：默认</text>
             <button bind:tap="handleClose" data-gravity="right">关闭</button>
         </view>
     </modal>
-    <modal ui-class="bottom-drawer" visible="{{modal.bottom}}" gravity="bottom" bindtapMask="handleClose"
+    <modal mini-class="bottom-drawer"
+           visible="{{modal.bottom}}"
+           gravity="bottom"
+           bindtapMask="handleClose"
            data-gravity="bottom">
         <view class="content bottom">
-            <text>Hello</text>
+            <text>动画时间：默认</text>
             <button bind:tap="handleClose" data-gravity="bottom">关闭</button>
         </view>
     </modal>

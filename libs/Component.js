@@ -12,11 +12,12 @@ function create(extra, factory = Component) {
 }
 
 const _Component = create({
-    externalClasses: ['ui-class'],
+    externalClasses: ['ui-class', 'mini-class'],
     options: {
         styleIsolation: 'isolated',
         multipleSlots: true,
-        pureDataPattern: /^\$_/
+        pureDataPattern: /^\$_/,
+        virtualHost: true
     }
 });
 
