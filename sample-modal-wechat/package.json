@@ -1,0 +1,9 @@
+{
+    "name": "sample-modal-wechat",
+    "version": "0.0.0",
+    "private": true,
+    "description": "微信端示例：通过 file:.. 本地依赖 @mini-dev/modal 演示 modal 组件",
+    "dependencies": {
+        "@mini-dev/modal": "file:.."
+    }
+}

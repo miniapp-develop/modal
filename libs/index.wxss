@@ -6,7 +6,7 @@
     bottom: 0;
     visibility: hidden;
     opacity: 0;
-    background: rgba(0, 0, 0, .6);
+    background: rgba(0, 0, 0, 0.6);
     transition-property: all;
     transition-timing-function: ease-in-out;
 }
@@ -62,7 +62,7 @@
     left: 0;
     top: 0;
     right: 0;
-    transform: translate3d(0, -100%, 0)
+    transform: translate3d(0, -100%, 0);
 }
 
 .top.show {
@@ -74,7 +74,7 @@
     top: 0;
     right: 0;
     bottom: 0;
-    transform: translate3d(100%, 0, 0)
+    transform: translate3d(100%, 0, 0);
 }
 
 .right.show {
@@ -86,7 +86,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    transform: translate3d(0, 100%, 0)
+    transform: translate3d(0, 100%, 0);
 }
 
 .bottom.show {

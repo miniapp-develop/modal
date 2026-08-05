@@ -1,0 +1,6 @@
+node_modules
+sample-*/node_modules
+sample-*/miniprogram_npm
+miniprogram_npm
+*.lock
+*.wxml

@@ -35,12 +35,14 @@
     box-shadow: #00000066 5rpx 5rpx 40rpx;
 }
 
-.left, .right {
+.left,
+.right {
     width: 80vw;
     height: 100vh;
 }
 
-.top, .bottom {
+.top,
+.bottom {
     width: 100vw;
     height: 50vh;
 }

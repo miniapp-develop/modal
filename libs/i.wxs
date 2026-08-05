@@ -4,7 +4,7 @@ var anim = function (gravity, duration) {
     } else {
         return 'transition-duration:' + duration;
     }
-}
+};
 module.exports = {
     anim: anim
 };

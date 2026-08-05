@@ -1,24 +1,52 @@
 {
-  "name": "@mini-dev/modal",
-  "version": "0.0.5",
-  "description": "miniapp modal component",
-  "miniprogram": "libs",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+git@github.com:miniapp-develop/modal.git"
-  },
-  "bugs": {
-    "url": "https://github.com/miniapp-develop/modal"
-  },
-  "homepage": "https://github.com/miniapp-develop/modal",
-  "devDependencies": {
-  },
-  "keywords": [
-    "miniapp"
-  ],
-  "author": "xesam",
-  "license": "ISC"
+    "name": "@mini-dev/modal",
+    "version": "0.0.5",
+    "description": "miniapp modal component",
+    "miniprogram": "libs",
+    "main": "libs/index.js",
+    "types": "libs/index.d.ts",
+    "files": [
+        "libs"
+    ],
+    "scripts": {
+        "lint": "eslint libs",
+        "format": "prettier --write .",
+        "format:check": "prettier --check .",
+        "typecheck": "tsc --noEmit",
+        "changeset": "changeset",
+        "version": "changeset version",
+        "release": "changeset publish",
+        "prepare": "husky"
+    },
+    "lint-staged": {
+        "*.{js,json,wxss,md}": "prettier --write",
+        "*.js": "eslint --fix"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+git@github.com:miniapp-develop/modal.git"
+    },
+    "bugs": {
+        "url": "https://github.com/miniapp-develop/modal"
+    },
+    "homepage": "https://github.com/miniapp-develop/modal",
+    "keywords": [
+        "miniapp",
+        "miniprogram",
+        "modal",
+        "wechat"
+    ],
+    "author": "xesam",
+    "license": "MIT",
+    "devDependencies": {
+        "@changesets/cli": "^2.27.11",
+        "@commitlint/cli": "^19.6.0",
+        "@commitlint/config-conventional": "^19.6.0",
+        "eslint": "^8.57.1",
+        "husky": "^9.1.7",
+        "lint-staged": "^15.2.10",
+        "miniprogram-api-typings": "^2.8.3-1",
+        "prettier": "^3.3.3",
+        "typescript": "^5.6.3"
+    }
 }

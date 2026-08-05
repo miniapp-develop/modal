@@ -26,7 +26,7 @@ Page({
     },
     onTapDefault() {
         wx.showModal({
-            content: "test"
-        })
+            content: 'test'
+        });
     }
 });
