@@ -1,6 +1,6 @@
 {
     "name": "@mini-dev/modal",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "description": "miniapp modal component",
     "miniprogram": "libs",
     "main": "libs/index.js",
@@ -24,12 +24,12 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+git@github.com:miniapp-develop/modal.git"
+        "url": "git+https://github.com/xesam/minidev-ui-modal.git"
     },
     "bugs": {
-        "url": "https://github.com/miniapp-develop/modal"
+        "url": "https://github.com/xesam/minidev-ui-modal/issues"
     },
-    "homepage": "https://github.com/miniapp-develop/modal",
+    "homepage": "https://github.com/xesam/minidev-ui-modal#readme",
     "keywords": [
         "miniapp",
         "miniprogram",
